@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+
+    <!-- Change this to your name-->
+    <meta name="Abbas" content="Abbas Hussein" />
+
+    <title>WEB222 Music App</title>
+    <!-- Classless CSS Stylesheet - https://watercss.kognise.dev/ -->
+    <link rel="stylesheet" href="./css/water.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Change this to your App's info -->
+      <h1>Ataraxia</h1>
+      <p>A Peaceful and Blissful Platform of Music</p>
+    </header>
+
+    <nav id="menu">
+      <!-- Dynamically create your menu category buttons here -->
+      <!-- added the link to go to the form of requesting a new artist-->
+      <a href="requestingArtist.html">Want to request a new artist?</a>
+    </nav>
+
+    <hr />
+
+    <main>
+      <h2 id="selected-artist">
+        <!-- Dynamically update the selected category title -->
+      </h2>
+      <div class="card-container" id="songs"></div>
+
+      <!-- for the newsletter -->
+      <section id="newsletter-form">
+        <h2>Sign Up for Our Ataraxia Newsletter as we enhance the spirituality of our teamwork!</h2>
+        <form id="newsletter-signup-form" action="https://httpbin.org/post" method="post">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Click here to sign up</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>

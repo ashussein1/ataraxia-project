@@ -1,0 +1,62 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #095368d2;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(244, 240, 240, 0.553);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+#newsletter-form,
+#new-artist-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(244, 240, 240, 0.553);
+}
+
+#newsletter-form label,
+#new-artist-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#newsletter-form input,
+#new-artist-form input,
+#newsletter-form button,
+#new-artist-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#newsletter-form button,
+#new-artist-form button {
+  background-color: #095368d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#newsletter-form button:hover,
+#new-artist-form button:hover {
+  background-color: #095368d2;
+  box-shadow: 0 4px 8px rgba(244, 240, 240, 0.553);
+}
